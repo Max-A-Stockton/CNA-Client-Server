@@ -11,6 +11,7 @@ using System.Collections.Concurrent;
 using System.Net.Configuration;
 using System.Runtime.Serialization.Formatters.Binary;
 using Packets;
+using System.Security.Cryptography;
 
 namespace Server
 {
@@ -20,6 +21,10 @@ namespace Server
         private ConcurrentDictionary<int, Client> clients;
         private UdpClient udpListener;
         private BinaryFormatter formatter;
+        private RSACryptoServiceProvider rsaProvider;
+        private RSAParameters publicKey;
+        private RSAParameters privateKey;
+        private RSAParameters ServerKey;
 
         public Server(string ipAddress, int port)
         {

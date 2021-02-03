@@ -10,6 +10,8 @@ using System.IO;
 using System.Net.Configuration;
 using System.Runtime.Serialization.Formatters.Binary;
 using Packets;
+using System.Security.Cryptography;
+
 
 namespace Server
 {
@@ -22,6 +24,10 @@ namespace Server
         private object readLock;
         private object writeLock;
         private BinaryFormatter formatter;
+        private RSACryptoServiceProvider rsaProvider;
+        private RSAParameters publicKey;
+        private RSAParameters privateKey;
+        private RSAParameters clientKey;
 
         public IPEndPoint ipEndPoint;
 
