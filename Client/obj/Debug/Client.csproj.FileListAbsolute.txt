@@ -1,0 +1,18 @@
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\bin\Debug\Client.exe.config
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\bin\Debug\Client.exe
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\bin\Debug\Client.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.csprojAssemblyReference.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.exe
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.ClientForm.resources
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\bin\Debug\Packets.dll
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\bin\Debug\Packets.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Client\obj\Debug\Client.csproj.CopyComplete
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.csprojAssemblyReference.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.ClientForm.resources
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.exe
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Client\obj\Debug\Client.pdb

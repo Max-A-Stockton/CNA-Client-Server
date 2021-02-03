@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sp7Q9Wf0fkST+EtqPqq1w8yo2Ltcf/45MxvZ5bMt5OxHs0mjE0cHfSOJUjfdfV4Ihj7ryv/ucjsOp926smTYrQ==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\Max\\Documents\\Dev\\My Stuff\\University\\Year 2\\CNA\\C#\\CNA-Client-Server\\Packets\\Packets.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\max_s\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\max_s\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

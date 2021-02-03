@@ -1,0 +1,10 @@
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\bin\Debug\Server.exe.config
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\bin\Debug\Server.exe
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\bin\Debug\Server.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\obj\Debug\Server.exe
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\obj\Debug\Server.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\bin\Debug\Packets.dll
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\bin\Debug\Packets.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Server\obj\Debug\Server.csproj.CopyComplete

@@ -1,0 +1,18 @@
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.csprojAssemblyReference.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.AssemblyInfoInputs.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.AssemblyInfo.cs
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.csproj.CoreCompileInputs.cache
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.deps.json
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.dll
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.pdb
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.dll
+D:\Users\Max\Documents\Dev\University\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.pdb
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.deps.json
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.dll
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\bin\Debug\netstandard2.0\Packets.pdb
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.csprojAssemblyReference.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.AssemblyInfoInputs.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.AssemblyInfo.cs
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.csproj.CoreCompileInputs.cache
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.dll
+D:\Users\Max\Documents\Dev\My Stuff\University\Year 2\CNA\C#\CNA-Client-Server\Packets\obj\Debug\netstandard2.0\Packets.pdb
