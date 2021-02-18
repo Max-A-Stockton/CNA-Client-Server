@@ -28,6 +28,7 @@ namespace Server
         private RSAParameters publicKey;
         private RSAParameters privateKey;
         private RSAParameters clientKey;
+        private object rsaLock;
 
         public IPEndPoint ipEndPoint;
 
@@ -40,8 +41,42 @@ namespace Server
             reader = new BinaryReader(stream, Encoding.UTF8);
             writer = new BinaryWriter(stream, Encoding.UTF8);
             formatter = new BinaryFormatter();
+            rsaProvider = new RSACryptoServiceProvider(2048);
+            publicKey = rsaProvider.ExportParameters(false);
 
         }
+
+        /*public byte[] Encrypt(byte[] data)
+        {
+            lock (rsaLock)
+            {
+                rsaProvider.ImportParameters(clientKey);
+                return rsaProvider.Encrypt(data, true);
+            }
+        }
+
+        public byte[] Decrypt(byte[] data)
+        {
+            lock (rsaLock)
+            {
+                rsaProvider.ImportParameters(clientKey);
+                return rsaProvider.Decrypt(data, true);
+            }
+        }
+
+        public byte[] EncryptString(String Message)
+        {
+            byte[] message = UTF8Encoding.UTF8.GetBytes(Message);
+            return Encrypt(message);
+        }
+
+        public String DecryptString(String Message)
+        {
+            byte[] message = Decrypt(Message);
+            return UTF8Encoding.UTF8.GetString(message);
+        }*/
+
+
         //Close function
         public void Close()
         {

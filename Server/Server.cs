@@ -24,16 +24,19 @@ namespace Server
         private RSACryptoServiceProvider rsaProvider;
         private RSAParameters publicKey;
         private RSAParameters privateKey;
-        private RSAParameters ServerKey;
+        private RSAParameters serverKey;
+        private object rsaLock;
 
         public Server(string ipAddress, int port)
         {
            IPAddress ip = IPAddress.Parse(ipAddress);
             tcpListener = new TcpListener(ip, port);
             udpListener = new UdpClient(port);
+            rsaProvider = new RSACryptoServiceProvider(2048);
+            publicKey = rsaProvider.ExportParameters(false);
 
-            Thread thread1 = new Thread(() => { UdpListen(); });
-            thread1.Start();
+            //Thread thread1 = new Thread(() => { UdpListen(); });
+            //thread1.Start();
         }
         //Start the server
         public void Start()
@@ -66,6 +69,36 @@ namespace Server
             tcpListener.Stop();
         }
 
+        /*public byte[] Encrypt(byte[] data)
+        {
+            lock (rsaLock)
+            {
+                rsaProvider.ImportParameters(serverKey);
+                return rsaProvider.Encrypt(data, true);
+            }
+        }
+
+        public byte[] Decrypt(byte[] data)
+        {
+            lock (rsaLock)
+            {
+                rsaProvider.ImportParameters(serverKey);
+                return rsaProvider.Decrypt(data, true);
+            }
+        }
+
+        public byte[] EncryptString(String Message)
+        {
+            byte[] message = UTF8Encoding.UTF8.GetBytes(Message);
+            return Encrypt(message);
+        }
+
+        public String DecryptString(String Message)
+        {
+            byte[] message = Decrypt(Message);
+            return UTF8Encoding.UTF8.GetString(message);
+        }*/
+
         //Client Method
         private void ClientMethod(int index)
         {
@@ -97,7 +130,7 @@ namespace Server
             clients.TryRemove(index, out c);
 
         }
-        private void UdpListen()
+        /*private void UdpListen()
         {
             try
             {
@@ -126,7 +159,7 @@ namespace Server
             {
 
             }
-        }
+        }*/
 
         //Return message
         private string GetReturnMessage(string code)
