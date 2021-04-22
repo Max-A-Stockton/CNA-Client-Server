@@ -108,13 +108,16 @@ namespace Server
             {
                 switch (receivedMessage.m_Packet)
                 {
-                    //Chat packet
                     case packetType.login:
                         LoginPacket loginPacket = (LoginPacket)receivedMessage;
                         break;
+                    //Chat packet
                     case packetType.chatMessage:
                         ChatMessagePacket chatPacket = (ChatMessagePacket)receivedMessage;
-                        clients[index].Send(chatPacket);
+                        for (int i = 0; i < clients.Count; i++)
+                        {
+                            clients[i].Send(chatPacket);
+                        }
                         break;
                     //Private message packet
                     case packetType.privateMessage:
