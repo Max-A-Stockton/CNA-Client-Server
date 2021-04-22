@@ -31,6 +31,8 @@
             this.SubmitButton = new System.Windows.Forms.Button();
             this.InputField = new System.Windows.Forms.TextBox();
             this.MessageWindow = new System.Windows.Forms.TextBox();
+            this.ChangeNicknameButton = new System.Windows.Forms.Button();
+            this.NicknameInputField = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SubmitButton
@@ -52,17 +54,35 @@
             // 
             // MessageWindow
             // 
-            this.MessageWindow.Location = new System.Drawing.Point(12, 13);
+            this.MessageWindow.Location = new System.Drawing.Point(12, 61);
             this.MessageWindow.Multiline = true;
             this.MessageWindow.Name = "MessageWindow";
-            this.MessageWindow.Size = new System.Drawing.Size(776, 370);
+            this.MessageWindow.Size = new System.Drawing.Size(776, 322);
             this.MessageWindow.TabIndex = 2;
+            // 
+            // ChangeNicknameButton
+            // 
+            this.ChangeNicknameButton.Location = new System.Drawing.Point(247, 12);
+            this.ChangeNicknameButton.Name = "ChangeNicknameButton";
+            this.ChangeNicknameButton.Size = new System.Drawing.Size(108, 33);
+            this.ChangeNicknameButton.TabIndex = 3;
+            this.ChangeNicknameButton.Text = "Change Nickname";
+            this.ChangeNicknameButton.UseVisualStyleBackColor = true;
+            // 
+            // NicknameInputField
+            // 
+            this.NicknameInputField.Location = new System.Drawing.Point(13, 20);
+            this.NicknameInputField.Name = "NicknameInputField";
+            this.NicknameInputField.Size = new System.Drawing.Size(228, 20);
+            this.NicknameInputField.TabIndex = 4;
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NicknameInputField);
+            this.Controls.Add(this.ChangeNicknameButton);
             this.Controls.Add(this.MessageWindow);
             this.Controls.Add(this.InputField);
             this.Controls.Add(this.SubmitButton);
@@ -78,5 +98,7 @@
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.TextBox InputField;
         private System.Windows.Forms.TextBox MessageWindow;
+        private System.Windows.Forms.Button ChangeNicknameButton;
+        private System.Windows.Forms.TextBox NicknameInputField;
     }
 }

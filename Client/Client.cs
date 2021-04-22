@@ -105,11 +105,11 @@ namespace Client
                     {
                         case packetType.chatMessage:
                             ChatMessagePacket chatPacket = (ChatMessagePacket)receivedPacket;
-                            clientForm.UpdateChatWindow(chatPacket.m_Messagee);
+                            clientForm.UpdateChatWindow(chatPacket.m_Message);
                             break;
                         case packetType.privateMessage:
                             break;
-                        case packetType.clientName:
+                        case packetType.nickname:
                             break;
                     }
                 }
@@ -137,11 +137,11 @@ namespace Client
                     {
                         case packetType.chatMessage:
                             ChatMessagePacket chatPacket = (ChatMessagePacket)receivedPacket;
-                            clientForm.UpdateChatWindow(chatPacket.m_Messagee);
+                            clientForm.UpdateChatWindow(chatPacket.m_Message);
                             break;
                         case packetType.privateMessage:
                             break;
-                        case packetType.clientName:
+                        case packetType.nickname:
                             break;
                     }
                 }
@@ -169,13 +169,14 @@ namespace Client
             }
         }
 
-        public void SendMessage(Packet message)
+        public void SendMessage(Packet nickname, Packet message)
         {
                 MemoryStream memoryStream = new MemoryStream();
+                formatter.Serialize(memoryStream, nickname);
                 formatter.Serialize(memoryStream, message);
 
-                //Store the byte array from the memry stream in a new variable
-                byte[] buffer = memoryStream.GetBuffer();
+            //Store the byte array from the memry stream in a new variable
+            byte[] buffer = memoryStream.GetBuffer();
 
                 //Write length of array to writer
                 writer.Write(buffer.Length);

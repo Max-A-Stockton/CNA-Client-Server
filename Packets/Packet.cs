@@ -7,7 +7,7 @@ namespace Packets
         {
             chatMessage,
             privateMessage,
-            clientName,
+            nickname,
             login
         }
 
@@ -19,11 +19,21 @@ namespace Packets
     [Serializable]
     public class ChatMessagePacket : Packet
     {
-        public string m_Messagee { get; protected set; }
+        public string m_Message { get; protected set; }
         public ChatMessagePacket(string message)
         {
-            m_Messagee = message;
+            m_Message = message;
             m_Packet = packetType.chatMessage;
+        }
+    }
+    [Serializable]
+    public class NicknamePacket : Packet
+    {
+        public string m_Nickname { get; protected set; }
+        public NicknamePacket(string nickname)
+        {
+            m_Nickname = nickname;
+            m_Packet = packetType.nickname;
         }
     }
     [Serializable]

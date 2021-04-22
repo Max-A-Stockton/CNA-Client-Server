@@ -120,7 +120,9 @@ namespace Server
                     case packetType.privateMessage:
                         break;
                     //Client name packet
-                    case packetType.clientName:
+                    case packetType.nickname:
+                        NicknamePacket nicknamePacket = (NicknamePacket)receivedMessage;
+                        clients[index].Send(nicknamePacket);
                         break;
                 }
             }

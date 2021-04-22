@@ -14,6 +14,7 @@ namespace Client
     public partial class ClientForm : Form
     {
         Client _client;
+        String nickname;
         //Initialise Client
         public ClientForm(Client client)
         {
@@ -25,8 +26,19 @@ namespace Client
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             ChatMessagePacket chatPacket = new ChatMessagePacket(InputField.Text);
-            _client.SendMessage(chatPacket);
+            String _nickname = nickname;
+            _nickname = _nickname + ": ";
+            NicknamePacket nicknamePacket = new NicknamePacket(_nickname);
+            _client.SendMessage(nicknamePacket, chatPacket);
         }
+        
+        //Change nickname button
+        private void ChangeNicknameButton_Click(object sender, EventArgs e)
+        {
+            nickname = NicknameInputField.Text;
+        }
+
+        
         //Update the chat window
         public void UpdateChatWindow(String message)
         {
@@ -43,7 +55,6 @@ namespace Client
                 MessageWindow.SelectionStart = MessageWindow.Text.Length;
                 MessageWindow.ScrollToCaret();
             }
-
 
         }
     }
