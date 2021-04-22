@@ -33,6 +33,7 @@
             this.MessageWindow = new System.Windows.Forms.TextBox();
             this.ChangeNicknameButton = new System.Windows.Forms.Button();
             this.NicknameInputField = new System.Windows.Forms.TextBox();
+            this.NicknameWindow = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SubmitButton
@@ -77,11 +78,19 @@
             this.NicknameInputField.Size = new System.Drawing.Size(228, 20);
             this.NicknameInputField.TabIndex = 4;
             // 
+            // NicknameWindow
+            // 
+            this.NicknameWindow.Location = new System.Drawing.Point(361, 19);
+            this.NicknameWindow.Name = "NicknameWindow";
+            this.NicknameWindow.Size = new System.Drawing.Size(356, 20);
+            this.NicknameWindow.TabIndex = 5;
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NicknameWindow);
             this.Controls.Add(this.NicknameInputField);
             this.Controls.Add(this.ChangeNicknameButton);
             this.Controls.Add(this.MessageWindow);
@@ -101,5 +110,6 @@
         private System.Windows.Forms.TextBox MessageWindow;
         private System.Windows.Forms.Button ChangeNicknameButton;
         private System.Windows.Forms.TextBox NicknameInputField;
+        private System.Windows.Forms.TextBox NicknameWindow;
     }
 }

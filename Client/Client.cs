@@ -23,6 +23,8 @@ namespace Client
         private ClientForm clientForm;
         private UdpClient udpClient;
 
+        public String nickname;
+
         //Constructor
         public Client()
         {
@@ -184,6 +186,25 @@ namespace Client
                 writer.Write(buffer);
 
                 writer.Flush();
+
+            /*writer.WriteLine(message);
+            writer.Flush();*/
+        }
+        public void SendNickname(Packet nickname)
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            formatter.Serialize(memoryStream, nickname);
+
+            //Store the byte array from the memry stream in a new variable
+            byte[] buffer = memoryStream.GetBuffer();
+
+            //Write length of array to writer
+            writer.Write(buffer.Length);
+
+            //Write Byte array to the writer
+            writer.Write(buffer);
+
+            writer.Flush();
 
             /*writer.WriteLine(message);
             writer.Flush();*/

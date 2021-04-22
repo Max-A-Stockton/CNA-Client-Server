@@ -42,6 +42,8 @@ namespace Client
         private void ChangeNicknameButton_Click_1(object sender, EventArgs e)
         {
             nickname = NicknameInputField.Text;
+            NicknamePacket nicknamePacket = new NicknamePacket(nickname);
+            _client.SendNickname(nicknamePacket);
         }
 
         //Update the chat window
@@ -52,6 +54,24 @@ namespace Client
                 Invoke(new Action(() =>
                 {
                     UpdateChatWindow(message);
+                }));
+            }
+            else
+            {
+                MessageWindow.Text += message + Environment.NewLine;
+                MessageWindow.SelectionStart = MessageWindow.Text.Length;
+                MessageWindow.ScrollToCaret();
+            }
+
+        }
+
+        public void UpdateNicknameWindow(String nickname)
+        {
+            if (MessageWindow.InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    UpdateNicknameWindow(nickname);
                 }));
             }
             else

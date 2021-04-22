@@ -125,7 +125,10 @@ namespace Server
                     //Client name packet
                     case packetType.nickname:
                         NicknamePacket nicknamePacket = (NicknamePacket)receivedMessage;
-                        clients[index].Send(nicknamePacket);
+                        for (int i = 0; i < clients.Count; i++)
+                        {
+                            clients[index].Send(nicknamePacket);
+                        }
                         break;
                 }
             }
