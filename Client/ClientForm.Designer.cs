@@ -68,6 +68,7 @@
             this.ChangeNicknameButton.TabIndex = 3;
             this.ChangeNicknameButton.Text = "Change Nickname";
             this.ChangeNicknameButton.UseVisualStyleBackColor = true;
+            this.ChangeNicknameButton.Click += new System.EventHandler(this.ChangeNicknameButton_Click_1);
             // 
             // NicknameInputField
             // 

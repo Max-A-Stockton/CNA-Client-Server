@@ -15,6 +15,7 @@ namespace Client
     {
         Client _client;
         String nickname;
+        String message;
         //Initialise Client
         public ClientForm(Client client)
         {
@@ -25,20 +26,24 @@ namespace Client
         //Submit button
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            ChatMessagePacket chatPacket = new ChatMessagePacket(InputField.Text);
+
+            message = InputField.Text;
             String _nickname = nickname;
             _nickname = _nickname + ": ";
-            NicknamePacket nicknamePacket = new NicknamePacket(_nickname);
-            _client.SendMessage(nicknamePacket, chatPacket);
+            message = message.Insert(0, _nickname);
+            if (_nickname == ": ")
+            {
+                message = ("A user without a set nickname tried to send a message.");
+            }
+            ChatMessagePacket chatPacket = new ChatMessagePacket(message);
+            _client.SendMessage(chatPacket);
         }
-        
         //Change nickname button
-        private void ChangeNicknameButton_Click(object sender, EventArgs e)
+        private void ChangeNicknameButton_Click_1(object sender, EventArgs e)
         {
             nickname = NicknameInputField.Text;
         }
 
-        
         //Update the chat window
         public void UpdateChatWindow(String message)
         {
@@ -57,5 +62,6 @@ namespace Client
             }
 
         }
+
     }
 }

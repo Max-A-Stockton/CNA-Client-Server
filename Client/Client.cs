@@ -169,10 +169,9 @@ namespace Client
             }
         }
 
-        public void SendMessage(Packet nickname, Packet message)
+        public void SendMessage(Packet message)
         {
                 MemoryStream memoryStream = new MemoryStream();
-                formatter.Serialize(memoryStream, nickname);
                 formatter.Serialize(memoryStream, message);
 
             //Store the byte array from the memry stream in a new variable
