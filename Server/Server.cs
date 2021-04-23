@@ -80,22 +80,22 @@ namespace Server
 
         public byte[] Decrypt(byte[] data)
         {
-            lock (rsaLock)
+            lock (rsaProvider)
             {
                 rsaProvider.ImportParameters(serverKey);
                 return rsaProvider.Decrypt(data, true);
             }
         }
 
-        public byte[] EncryptString(String Message)
+        public byte[] EncryptString(String message)
         {
-            byte[] message = UTF8Encoding.UTF8.GetBytes(Message);
+            byte[] _message = UTF8Encoding.UTF8.GetBytes(message);
             return Encrypt(message);
         }
 
-        public String DecryptString(String Message)
+        public String DecryptString(String message)
         {
-            byte[] message = Decrypt(Message);
+            byte[] _message = Decrypt(message);
             return UTF8Encoding.UTF8.GetString(message);
         }*/
 
@@ -161,11 +161,6 @@ namespace Server
                             break;
                     }
                 }
-            }
-
-            foreach (Client c in clients)
-            {
-
             }
         }*/
 
